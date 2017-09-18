@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69C40EBA9C5F5512618DA4AA /* libPods-HTCAutoFlexSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A16FF64B85C2CCCA89B6BD /* libPods-HTCAutoFlexSlider.a */; };
 		B34DB51C1F6BCC1900A9DFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DB51B1F6BCC1900A9DFC6 /* main.m */; };
 		B34DB51F1F6BCC1900A9DFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DB51E1F6BCC1900A9DFC6 /* AppDelegate.m */; };
 		B34DB5221F6BCC1900A9DFC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DB5211F6BCC1900A9DFC6 /* ViewController.m */; };
 		B34DB5251F6BCC1900A9DFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34DB5231F6BCC1900A9DFC6 /* Main.storyboard */; };
 		B34DB5271F6BCC1900A9DFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34DB5261F6BCC1900A9DFC6 /* Assets.xcassets */; };
 		B34DB52A1F6BCC1900A9DFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34DB5281F6BCC1900A9DFC6 /* LaunchScreen.storyboard */; };
+		B34DB5341F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B34DB5331F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		B34DB5261F6BCC1900A9DFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B34DB5291F6BCC1900A9DFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B34DB52B1F6BCC1900A9DFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34DB5321F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCAutoFlexSliderView.h; sourceTree = "<group>"; };
+		B34DB5331F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCAutoFlexSliderView.m; sourceTree = "<group>"; };
+		BD78EE024F0AFB9B2C27C10D /* Pods-HTCAutoFlexSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCAutoFlexSlider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTCAutoFlexSlider/Pods-HTCAutoFlexSlider.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A16FF64B85C2CCCA89B6BD /* libPods-HTCAutoFlexSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTCAutoFlexSlider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFED84D1A4C275B0ED98F886 /* Pods-HTCAutoFlexSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCAutoFlexSlider.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTCAutoFlexSlider/Pods-HTCAutoFlexSlider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C40EBA9C5F5512618DA4AA /* libPods-HTCAutoFlexSlider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EE536E2903C325FB7BA4586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7A16FF64B85C2CCCA89B6BD /* libPods-HTCAutoFlexSlider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9053D2B98110A21FD2A77A62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD78EE024F0AFB9B2C27C10D /* Pods-HTCAutoFlexSlider.debug.xcconfig */,
+				FFED84D1A4C275B0ED98F886 /* Pods-HTCAutoFlexSlider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B34DB50E1F6BCC1900A9DFC6 = {
 			isa = PBXGroup;
 			children = (
 				B34DB5191F6BCC1900A9DFC6 /* HTCAutoFlexSlider */,
 				B34DB5181F6BCC1900A9DFC6 /* Products */,
+				9053D2B98110A21FD2A77A62 /* Pods */,
+				7EE536E2903C325FB7BA4586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +85,7 @@
 		B34DB5191F6BCC1900A9DFC6 /* HTCAutoFlexSlider */ = {
 			isa = PBXGroup;
 			children = (
+				B34DB5311F6BCC7800A9DFC6 /* Classes */,
 				B34DB51D1F6BCC1900A9DFC6 /* AppDelegate.h */,
 				B34DB51E1F6BCC1900A9DFC6 /* AppDelegate.m */,
 				B34DB5201F6BCC1900A9DFC6 /* ViewController.h */,
@@ -79,6 +107,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B34DB5311F6BCC7800A9DFC6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B34DB5321F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.h */,
+				B34DB5331F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B34DB52E1F6BCC1900A9DFC6 /* Build configuration list for PBXNativeTarget "HTCAutoFlexSlider" */;
 			buildPhases = (
+				7EEEE3485227A14B87B7AAE9 /* [CP] Check Pods Manifest.lock */,
 				B34DB5131F6BCC1900A9DFC6 /* Sources */,
 				B34DB5141F6BCC1900A9DFC6 /* Frameworks */,
 				B34DB5151F6BCC1900A9DFC6 /* Resources */,
+				5838EA096EF1845E686D07E6 /* [CP] Embed Pods Frameworks */,
+				28F4F8A5693C82FE2EF96D03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +186,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28F4F8A5693C82FE2EF96D03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTCAutoFlexSlider/Pods-HTCAutoFlexSlider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5838EA096EF1845E686D07E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTCAutoFlexSlider/Pods-HTCAutoFlexSlider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EEEE3485227A14B87B7AAE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B34DB5131F6BCC1900A9DFC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,6 +242,7 @@
 				B34DB5221F6BCC1900A9DFC6 /* ViewController.m in Sources */,
 				B34DB51F1F6BCC1900A9DFC6 /* AppDelegate.m in Sources */,
 				B34DB51C1F6BCC1900A9DFC6 /* main.m in Sources */,
+				B34DB5341F6BCD0D00A9DFC6 /* HTCAutoFlexSliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +360,12 @@
 		};
 		B34DB52F1F6BCC1900A9DFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD78EE024F0AFB9B2C27C10D /* Pods-HTCAutoFlexSlider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U8N666U5AW;
 				INFOPLIST_FILE = HTCAutoFlexSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realswifter.HTCAutoFlexSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,10 +374,12 @@
 		};
 		B34DB5301F6BCC1900A9DFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFED84D1A4C275B0ED98F886 /* Pods-HTCAutoFlexSlider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U8N666U5AW;
 				INFOPLIST_FILE = HTCAutoFlexSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.realswifter.HTCAutoFlexSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +405,7 @@
 				B34DB5301F6BCC1900A9DFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
